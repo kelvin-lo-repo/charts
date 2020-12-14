@@ -23,7 +23,7 @@ server:
         heapRegionSize: "32M"
 
 image:
-  repository: prestosql/presto
+  repository: docker-v2-repository-virtual-external.digital.oocl.com/prestosql/presto
   tag: 329
   pullPolicy: IfNotPresent
   securityContext:
