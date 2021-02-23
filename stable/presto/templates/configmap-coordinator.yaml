@@ -37,8 +37,18 @@ data:
     query.max-memory-per-node={{ .Values.server.config.query.maxMemoryPerNode }}
     discovery-server.enabled=true
     discovery.uri=http://localhost:{{ .Values.server.config.http.port }}
+    http-server.authentication.type={{ .Values.server.config.authentication.type }}
+    http-server.https.enabled= true
+    http-server.https.port={{ .Values.server.config.https.port }}
+    http-server.https.keystore.path={{ .Values.server.config.https.keystore.path }}
+    http-server.https.keystore.key={{ .Values.server.config.https.keystore.key }}
+
 
   log.properties: |
     io.prestosql={{ .Values.server.log.presto.level }}
+    
+  password-authenticator.properties: |
+    password-authenticator.name={{ .Values.server.passwordauthenticator.name }}
+    file.password-file={{ .Values.server.passwordauthenticator.passwordfile }}
 
 ---

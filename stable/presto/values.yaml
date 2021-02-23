@@ -12,6 +12,14 @@ server:
     pathCatalog: /usr/lib/presto/etc/catalog
     http:
       port: 8080
+    authentication:
+      type: PASSWORD
+    https:
+      port: 8443
+      keystore:
+        path: /usr/lib/presto/etc/keystore/keystore.jks
+        mountpath: /usr/lib/presto/etc/keystore
+        key: fwk_admin
     query:
       maxMemory: "4GB"
       maxMemoryPerNode: "1GB"
@@ -21,6 +29,10 @@ server:
       type: "UseG1GC"
       g1:
         heapRegionSize: "32M"
+  passwordauthenticator:
+    name: file
+    passwordfile: /usr/lib/presto/etc/auth/password.db
+    mountpath: /usr/lib/presto/etc/auth
 
 image:
   repository: docker-v2-repository-virtual-external.digital.oocl.com/prestosql/presto
