@@ -16,6 +16,7 @@ server:
       type: PASSWORD
     https:
       port: 8443
+      nodePort: 31205
       keystore:
         path: /usr/lib/presto/etc/keystore/keystore.jks
         mountpath: /usr/lib/presto/etc/keystore
@@ -44,6 +45,7 @@ image:
 
 service:
   type: ClusterIP
+  nodePort: NodePort
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
