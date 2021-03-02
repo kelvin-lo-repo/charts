@@ -6,7 +6,7 @@ replicaCount: 1
 podAnnotations: {}
 podLabels: {}
 image:
-  repository: metabase/metabase
+  repository: docker-v2-repository-virtual-external.digital.oocl.com/metabase/metabase
   tag: v0.36.3
   pullPolicy: IfNotPresent
 
