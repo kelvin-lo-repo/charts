@@ -46,7 +46,7 @@ metadata:
 {{ toYaml .Values.service.annotations | indent 4 }}
 {{- end }}
 spec:
-  type: {{ .Values.service.nodePort }}
+  type: {{ .Values.service.nodePortType }}
   ports:
     - port: {{ .Values.service.internalPort }}
       targetPort: {{ .Values.service.internalPort }}
