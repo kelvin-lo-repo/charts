@@ -34,14 +34,14 @@ jetty:
 # Backend database
 database:
   # Database type (h2 / mysql / postgres), default: h2
-  type: h2
+  type: mysql
   # encryptionKey: << YOUR ENCRYPTION KEY >>
   ## Only need when you use mysql / postgres
-  #host: 10.224.169.9
-  #port: 3306
-  #dbname: metabase
-  #username: presto_appln
-  #password: Password12@34
+  host: 10.224.169.9
+  port: 3306
+  dbname: metabase
+  username: presto_appln
+  password: Password12@34
   ## Alternatively, use a connection URI for full configurability. Example for SSL enabled Postgres.
   # connectionURI: postgres://user:password@host:port/database?ssl=true&sslmode=require&sslfactory=org.postgresql.ssl.NonValidatingFactory"
   ## If a secret with the database credentials already exists, use the following values:
@@ -81,7 +81,7 @@ service:
   externalPort: 80
   internalPort: 3000
   # Used to fix NodePort when service.type: NodePort.
-  nodePort: 
+  nodePort: 31234
   annotations: {}
     # Used to add custom annotations to the Service.
     # service.beta.kubernetes.io/aws-load-balancer-internal: "0.0.0.0/0"
