@@ -81,7 +81,7 @@ service:
   externalPort: 80
   internalPort: 3000
   # Used to fix NodePort when service.type: NodePort.
-  nodePort: 31234
+  nodePort: 
   annotations: {}
     # Used to add custom annotations to the Service.
     # service.beta.kubernetes.io/aws-load-balancer-internal: "0.0.0.0/0"
