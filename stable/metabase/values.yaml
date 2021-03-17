@@ -37,13 +37,13 @@ database:
   type: mysql
   # encryptionKey: << YOUR ENCRYPTION KEY >>
   ## Only need when you use mysql / postgres
-  host: 10.224.169.9
+  host: hk3cvdv02042.oocl.com
   port: 3306
   dbname: metabase
-  username: presto_appln
-  password: Password12@34
+  username: metabase_490_app
+  password: UcwpUS^3l9lXS8k9U2bV
   ## Alternatively, use a connection URI for full configurability. Example for SSL enabled Postgres.
-  connectionURI: mysql://10.224.169.9:3306/metabase?allowPublicKeyRetrieval=true&user=presto_appln&password=Password12@34
+  connectionURI: mysql://hk3cvdv02042.oocl.com:3306/metabase?allowPublicKeyRetrieval=true&user=metabase_490_app&password=UcwpUS^3l9lXS8k9U2bV
   ## If a secret with the database credentials already exists, use the following values:
   # existingSecret:
   # existingSecretUsernameKey:
