@@ -40,10 +40,10 @@ database:
   host: hk3cvdv02042.oocl.com
   port: 3306
   dbname: metabase
-  username: metabase_490_app
-  password: UcwpUS^3l9lXS8k9U2bV
+  username: metabase_490_cutover
+  password: Rw~^YSMo8QRUOWq160Wm
   ## Alternatively, use a connection URI for full configurability. Example for SSL enabled Postgres.
-  connectionURI: mysql://hk3cvdv02042.oocl.com:3306/metabase?allowPublicKeyRetrieval=true&user=metabase_490_app&password=UcwpUS^3l9lXS8k9U2bV
+  connectionURI: mysql://hk3cvdv02042.oocl.com:3306/metabase?allowPublicKeyRetrieval=true&user=metabase_490_cutover&password=Rw~^YSMo8QRUOWq160Wm
   ## If a secret with the database credentials already exists, use the following values:
   # existingSecret:
   # existingSecretUsernameKey:
