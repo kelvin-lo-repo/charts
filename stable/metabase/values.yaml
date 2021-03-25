@@ -6,8 +6,8 @@ replicaCount: 1
 podAnnotations: {}
 podLabels: {}
 image:
-  repository: docker-v2-repository-virtual-external.digital.oocl.com/metabase/metabase
-  tag: latest
+  repository: docker-v2-repository-virtual.digital.oocl.com/cms2-docker-internal-local/custom/metabase
+  tag: 0.39.0.1
   pullPolicy: IfNotPresent
 
 ## String to fully override metabase.fullname template
