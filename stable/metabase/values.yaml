@@ -7,7 +7,7 @@ podAnnotations: {}
 podLabels: {}
 image:
   repository: docker-v2-repository-virtual.digital.oocl.com/cms2-docker-internal-local/custom/metabase
-  tag: 0.39.0.4
+  tag: 0.39.0.3
   pullPolicy: IfNotPresent
 
 ## String to fully override metabase.fullname template
